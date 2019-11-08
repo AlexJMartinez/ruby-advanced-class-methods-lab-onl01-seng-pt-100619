@@ -13,6 +13,7 @@ class Song
   end
 
   def self.create
+<<<<<<< HEAD
     song = Song.new
     song.save
     song
@@ -45,6 +46,26 @@ class Song
 else song = Song.new
 end
   song
+=======
+    @@all << Song.new
+    song = Song.create
+
+  end
+
+  def self.new_by_name
+
+  end
+
+  def self.create_by_name
+
+  end
+
+  def self.find_by_name
+
+  end
+
+  def self.find_or_create_by_name
+>>>>>>> e261c5a3da35b185f47a88fcfd063a1720fffc9d
 
   end
 
@@ -52,6 +73,7 @@ end
     @@all.sort_by {|song| song.name}
   end
 
+<<<<<<< HEAD
   def self.new_from_filename(name)
 
      new_name = name.split(" - ")
@@ -69,6 +91,13 @@ end
     song.artist_name = new_name[0]
     song.name = new_name[1].gsub(".mp3","")
     song
+=======
+  def self.new_from_filename #look up gsub
+
+  end
+
+  def self.create_from_filename
+>>>>>>> e261c5a3da35b185f47a88fcfd063a1720fffc9d
 
   end
 
